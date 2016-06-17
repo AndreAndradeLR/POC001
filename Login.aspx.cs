@@ -13,8 +13,8 @@ public partial class frmLogin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {        
-        if (Request["msgerro"] != null)
-        {
+     ["msgerro"] != null)
+        
             Login1.InstructionText = Request["msgerro"].ToString();
         }
        if (Login1.FindControl("UserName")!=null)Login1.FindControl("UserName").Focus();
