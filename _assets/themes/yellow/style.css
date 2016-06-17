@@ -1,0 +1,76 @@
+table.tablesorterYellow {
+	font-size: 12px;
+	background-color: #e6e6e1;
+	width: 1024px;
+	border: 1px solid #999;
+
+}
+table.tablesorterYellow th {
+	text-align: left;
+	padding: 5px;
+	background-color: #f7f7f3;
+	background-image: url(nobg.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border: 1px solid #999;
+}
+table.tablesorterYellow td {
+	padding: 5px;
+	border: 1px solid #999;
+}
+table.tablesorterYellow td a {
+	text-decoration:none;
+	color:Blue;
+}
+table.tablesorterYellow .even {
+	background-color: #f7f7f1;
+}
+table.tablesorterYellow .odd {
+	background-color: #ededde;
+}
+table.tablesorterYellow .header {
+	background-image: url(bg.png);
+	background-repeat: no-repeat;
+	border: 1px solid #999;
+	padding-left: 30px;
+	padding-top: 8px;
+	height: auto;
+	cursor: pointer; /* hand cursor for Mozilla based browsers */
+	cursor: hand;
+}
+table.tablesorterYellow .headerSortUp {
+	background-image: url(asc.png);
+	background-repeat: no-repeat;
+}
+table.tablesorterYellow .headerSortDown {
+	background-image: url(desc.png);
+	background-repeat: no-repeat;
+}
+
+table.tablesorterYellow .tablesorterYellowPager {
+	padding: 10px 0 10px 0;		
+}
+table.tablesorterYellow .tablesorterYellowPager span {
+	padding: 0 5px 0 5px;
+}
+table.tablesorterYellow .tablesorterYellowPager input.prev {
+	width: auto;
+	margin-right: 10px;
+}
+table.tablesorterYellow .tablesorterYellowPager input.next {
+	width: auto;
+	margin-left: 10px;
+}
+table.tablesorterYellow .pagesize	
+{
+    background:#e6e6e1;
+}
+
+table.tablesorterYellow .pagedisplay 	
+{
+	width: 30px;
+	border: 0px;	
+	text-align:center;
+    vertical-align:top;
+    background:#e6e6e1;
+}

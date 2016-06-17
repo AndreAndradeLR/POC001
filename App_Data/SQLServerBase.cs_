@@ -1,0 +1,144 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+using System.Data.SqlClient;
+
+/// <summary>
+/// Summary description for SQLServerBase
+/// </summary>
+public class SQLServerBase
+{
+    SqlConnection _sqlConn;
+    private string _connString = "Data Source=127.0.0.1;Initial Catalog=dbSebraeParceiro;User ID=sa";
+    private bool _isConnected = false;
+    private int _linhasAfetadas = 0;
+
+    public SQLServerBase()
+	{
+        
+	}
+
+    protected void connect()
+    {
+        _sqlConn = new SqlConnection(_connString);
+        try
+        {
+            _sqlConn.Open();
+            _isConnected = true;
+        }
+        catch (Exception ex) { 
+            _isConnected = false;
+            System.Web.HttpContext.Current.Response.Write("Não foi possivel se conectar ao servidor do SQL Server. Erro:" + ex.Message); 
+        }
+        
+    }
+    protected void disconnect()
+    {
+        try
+        {
+            _sqlConn.Close();
+            _sqlConn.Dispose();
+            _isConnected = false;
+        }
+        catch (Exception ex) { 
+            System.Web.HttpContext.Current.Response.Write("Não foi possivel se desconectar do servidor do SQL Server. Erro:" + ex.Message); 
+        }
+    }
+    protected SqlParameter makeParam(string ParamName, SqlDbType DbType, int Size, ParameterDirection Direction, object Value)
+    {
+        SqlParameter param = default(SqlParameter);
+        if ((Size > 0))
+        {
+            param = new SqlParameter(ParamName, DbType, Size);
+        }
+        else
+        {
+            param = new SqlParameter(ParamName, DbType);
+        }
+        param.Direction = Direction;
+        if ((!(Direction == ParameterDirection.Output & (Value == null))))
+        {
+            param.Value = Value;
+        }
+        return param;
+    }
+
+    private bool executeNowQuery(string query)
+    {
+        SqlConnection sqlConn = new SqlConnection(_connString);
+        SqlCommand cmd = new SqlCommand(query, sqlConn);
+        bool result = false;
+        try
+        {
+            sqlConn.Open();
+            //cmd.CommandType = CommandType.Text;
+            result = Convert.ToBoolean(cmd.ExecuteNonQuery());
+        }
+        catch (Exception ex) { System.Web.HttpContext.Current.Response.Write(ex.Message); result = false; }
+        finally
+        {
+            sqlConn.Close();
+            cmd.Dispose();
+            sqlConn.Dispose();
+        }
+
+        return result;
+    }
+    
+
+    private bool executeNowQuery(string query, SqlParameter[] parameters)
+    {
+
+        SqlConnection sqlConn = new SqlConnection(_connString);
+        SqlCommand cmd = new SqlCommand(query, sqlConn);
+        foreach (SqlParameter param in parameters)
+        {
+            cmd.Parameters.Add(param);
+        }
+        bool result = false;
+       
+        try
+		{
+            sqlConn.Open();
+            result = Convert.ToBoolean(cmd.ExecuteNonQuery());
+            //System.Web.HttpContext.Current.Response.Write(cmd.ExecuteScalar());
+        }
+        catch (Exception ex) { System.Web.HttpContext.Current.Response.Write(ex.Message); result = false; }
+        finally
+        {
+            sqlConn.Close();
+            cmd.Dispose();
+            sqlConn.Dispose();
+        }
+
+        return result;
+    }
+
+    protected bool add(string query)
+    {
+        return executeNowQuery(query);
+    }
+    protected bool add(string query, SqlParameter[] parameters)
+    {
+        return executeNowQuery(query, parameters);
+    }
+    protected bool update(string query)
+    {
+        return executeNowQuery(query);
+    }
+    protected bool update(string query, SqlParameter[] parameters)
+    {
+        return executeNowQuery(query, parameters);
+    }
+    protected bool delete(string query)
+    {
+        return executeNowQuery(query);
+    }
+    protected bool delete(string query, SqlParameter[] parameters)
+    {
+        return executeNowQuery(query, parameters);
+    }
+
+}

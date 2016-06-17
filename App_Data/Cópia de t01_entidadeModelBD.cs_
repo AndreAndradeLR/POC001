@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+using System.Data.SqlClient;
+using System.ComponentModel;
+/// <summary>
+/// Summary description for t01_entidadeActionBD
+/// </summary>
+public class t01_entidadeActionBD:SQLServerBase 
+{
+	public t01_entidadeActionBD()
+	{
+		//
+		// TODO: Add constructor logic here
+		//
+        
+	}
+
+    public bool insert(t01_entidade t01)
+    {
+        string query = "insert into t01_entidade " + 
+            "values(@nm_entidade, @nm_uf, @nm_arquivo, @dt_cadastro, @dt_alterado, @fl_ativa, @nm_cnpj)";
+
+        SqlParameter[] param = new SqlParameter[]
+            {
+                makeParam("@nm_entidade", SqlDbType.VarChar, 500,ParameterDirection.Output, t01.nm_entidade),
+                makeParam("@nm_uf", SqlDbType.VarChar, 500,ParameterDirection.Output, t01.nm_uf),
+                makeParam("@nm_arquivo", SqlDbType.VarChar, 500,ParameterDirection.Output, t01.nm_arquivo),
+                makeParam("@dt_cadastro", SqlDbType.DateTime, 0,ParameterDirection.Output, t01.dt_cadastro),
+                makeParam("@dt_alterado", SqlDbType.DateTime, 0,ParameterDirection.Output, t01.dt_alterado),
+                makeParam("@fl_ativa", SqlDbType.Bit, 0,ParameterDirection.Output, t01.fl_ativa),
+                makeParam("@nm_cnpj", SqlDbType.VarChar, 100,ParameterDirection.Output, t01.nm_cnpj)
+            };
+
+        return this.add(query, param);
+    }
+}

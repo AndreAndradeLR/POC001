@@ -1,0 +1,333 @@
+#lightbox{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%	
+	}
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 466px;
+	background-color: #000;
+	}
+	
+	
+	
+body{
+width:100%;
+margin-left: 0px;
+margin-top: 0px;
+background-color: #F3F3E7;
+}
+
+#sombra{
+width:1026px;
+height:730px;
+background-image:url(../images/sombra_pg.png);
+background-repeat:repeat-y;
+margin-left:auto;
+margin-right:auto;
+}
+
+#bg {
+width:1008px;
+height:585px;
+background-image: url(../images/bg_page.jpg);
+background-repeat:repeat-x;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+#conteudo{
+width:1008px;
+/*height:585px;
+background-image: url(../images/bg_sigerio.jpg);*/
+height:730px;
+background-image: url(../images/\home_v1_2_com_logo.jpg);
+background-repeat:no-repeat;
+margin-left:auto;
+margin-right:auto;
+background-position:top center;
+}
+
+#header{
+width:1008px;
+height:95px;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+
+#spacer1{
+width:378px;
+height:211px;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+
+#texto1{
+width:295px;
+height:191px;
+float:left;
+margin-left:auto;
+margin-right:auto;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#FFFFFF;
+font-stretch:semi-condensed;
+text-align:justify;
+}
+
+
+#texto2{
+width:295px;
+height:191px;
+float:left;
+margin-left:auto;
+margin-right:auto;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#FFFFFF;
+font-stretch:semi-condensed;
+text-align:justify;
+}
+
+#texto3{
+width:630px;
+height:20px;
+color:#FFFFFF;
+font-size:11px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:800;
+float:left;
+font-style:italic;
+text-align:center;
+}
+
+#spacer2{
+height:155px;
+width:20px;
+float:left;
+}
+
+#spacer3{
+width:318px;
+height:279px;
+float:left;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+#modulo1{
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo1.png);
+background-repeat:no-repeat;
+}
+
+#modulo1:hover {
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo1_2.png);
+background-repeat:no-repeat;
+}
+
+#modulo2{
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo2.png);
+background-repeat:no-repeat;
+}
+
+#modulo2:hover {
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo2_2.png);
+background-repeat:no-repeat;
+}
+
+#modulo3{
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo3.png);
+background-repeat:no-repeat;
+}
+
+#modulo3:hover {
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo3_2.png);
+background-repeat:no-repeat;
+}
+
+#modulo4{
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo4.png);
+background-repeat:no-repeat;
+}
+
+#modulo4:hover {
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo4_2.png);
+background-repeat:no-repeat;
+}
+
+#modulo5{
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo5.png);
+background-repeat:no-repeat;
+}
+
+#modulo5:hover {
+width:138px;
+float:left;
+text-align:left;
+height:163px;
+background-image:url(../images/modulo5_2.png);
+background-repeat:no-repeat;
+}
+
+
+
+
+
+#spacer4{
+width:102px;
+height:100px;
+float:left;
+}
+
+#spacer5 {
+width:588px;
+float:left;
+height:20px;
+}
+
+
+#login{
+width:588px;
+float:left;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:9px;
+color:#000000;
+font-weight:800;
+line-height:3;
+text-align:left;
+text-decoration:none;
+}
+
+
+
+
+input{
+color: #000;
+background: #dcdcdc;
+border: 1px outset #000099;
+}
+
+
+
+.titulo{
+font-size:11px;
+font-weight:700;
+color:#000099;
+padding-left:150px;
+}
+
+.center{
+padding-left:60px;
+}
+
+

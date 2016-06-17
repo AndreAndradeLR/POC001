@@ -1,0 +1,72 @@
+table.tablesorterGreen {
+	font-size: 12px;
+	background-color: #4D4D4D;
+	width: 1024px;
+	border: 1px solid #000;
+}
+table.tablesorterGreen th {
+	text-align: left;
+	padding: 5px;
+	background-color: #6E6E6E;
+}
+table.tablesorterGreen td {
+	color: #FFF;
+	padding: 5px;
+}
+table.tablesorterGreen .even {
+	background-color: #3D3D3D;
+}
+table.tablesorterGreen .odd {
+	background-color: #6E6E6E;
+}
+table.tablesorterGreen .header {
+	background-image: url(bg.png);
+	background-repeat: no-repeat;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #000;
+	border-top: 1px solid #FFF;
+	padding-left: 30px;
+	padding-top: 8px;
+	height: auto;
+	cursor: pointer; /* hand cursor for Mozilla based browsers */
+	cursor: hand;
+}
+table.tablesorterGreen .headerSortUp {
+	background-image: url(asc.png);
+	background-repeat: no-repeat;
+}
+table.tablesorterGreen .headerSortDown {
+	background-image: url(desc.png);
+	background-repeat: no-repeat;
+}
+
+table.tablesorterGreen .tablesorterGreenPager {
+	padding: 10px 0 10px 0;		
+}
+table.tablesorterGreen .tablesorterGreenPager span {
+	padding: 0 5px 0 5px;
+}
+table.tablesorterGreen .tablesorterGreenPager input.prev {
+	width: auto;
+	margin-right: 10px;
+}
+table.tablesorterGreen .tablesorterGreenPager input.next {
+	width: auto;
+	margin-left: 10px;
+}
+table.tablesorterGreen .pagesize	
+{
+    background:#4d4d4d;
+    color: #fff;
+}
+
+table.tablesorterGreen .pagedisplay 	
+{
+    font-size:10pt;
+	width: 30px;
+	border: 0px;	
+	text-align:center;
+    vertical-align:top;
+    background:#4d4d4d;
+    color: #fff;
+}
