@@ -1,0 +1,732 @@
+﻿
+.blackborder
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #003399;
+	background: white;
+	text-align: left;
+}
+
+.bigtext
+{
+	font-size: 18pt;
+	font-weight: bold;
+	color: Navy;
+}
+.rightalign
+{
+	float: right;
+}
+
+
+/* block backgrounds for headers etc. */
+.menuband, .gridheader, .gridheaderbig, .gridpager, .buttonlinks, .blockheader, .roundedbar_top, .roundedbar_bottom
+{
+	color: cornsilk;
+	background-color: #003399;
+	padding: 0px;
+}
+/* alternate background color color to offset the background
+   used for the category list and banner strips for color
+   variety. should be a companion color to the block background
+   colors (previous tag
+*/
+.alternatebackground
+{
+	color: white;
+	background-color: #0066cc;
+}
+
+/* used for any block tags like headers on tables etc. */
+.blockheader
+{
+	font-weight:bold;
+}
+.banner
+{
+	color: cornsilk;
+	font-weight:bold;
+	background: #003399 url('../images/floralbackground_sm.gif') ;
+	height: 16px;
+	padding: 5px;
+	white-space:nowrap;
+}
+.bannertext
+{
+	color: White;
+	text-decoration: none;
+	padding: 1px 0;
+}
+.bannertext:visited
+{
+	color: white;
+}
+.bannertext:hover
+{
+	color: #003399;
+	background: white url('images/menuhighlight.png');	
+}
+.bannersubtitle
+{
+	color: khaki;
+	float:left;
+	padding-left:8px;
+}
+
+
+/* used on the category list as a standard link */
+.menucolumn 
+{ 
+	padding:5px;
+	border-bottom: solid 1px white ;
+}
+.menulink,.menulinkinline
+{
+    color: white;
+    font-size: 8pt;
+    font-weight: normal;
+    text-decoration: none ;
+    display:block;
+    text-align:left;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    border: solid 1px transparent;
+}
+.menulink:visited,.menulinkinline:visited
+{ color: #eeeeee; } 
+.menulink:hover,.menulinkinline:hover 
+{ 
+	color:#003399; 
+	text-decoration:none; 
+	font-weight:normal;	 
+	background: white url('images/menuhighlight.png') repeat-x;
+}
+.menulinkinline
+{
+    display: inline;
+}
+.menuband
+{	
+	font-weight: bold;
+	height: 20px;
+	padding-top: 5px;
+	text-align: center;
+	background: url('images/vertgradient.gif');
+}
+.menulinkcontainer
+{
+	padding: 5px;
+}
+.buttonlinks 
+{
+    font-weight:bold;
+    text-decoration: none;
+    display: block;
+    padding:2px;
+}
+.buttonlinks:visited { color: cornsilk; }
+.buttonlinks:hover { color:#003399; text-decoration:none; background:white;} 
+
+.imagelink
+{
+	text-decoration: none;
+	display: inline-block;
+	padding-left:4px;
+	padding-right: 4px;
+	padding-top: 2px;
+}
+.imagelink:hover { background: lightsteelblue; color:black; text-decoration:none; } 
+
+.submitbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	font-weight: bold;
+	height: 35px;
+	width: 200px;
+	background: url('images/submitbutton.gif');
+	color: lemonchiffon;
+}
+.submitbutton:hover { background: url('images/submitbuttonhover.gif');
+} 
+.submitbutton:active { background: url('images/submitbuttonpressed.gif');
+}
+
+.smallbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	height: 22px;
+	width: 90px;
+	font-size: 8pt;
+	color: navy;
+	background: url('images/smallbutton.gif');
+}
+.smallbutton:hover { background: url('images/smallbuttonhover.gif');
+}
+.smallbutton:active { background: url('images/smallbuttonpressed.gif');
+}
+
+.gridheader, .gridheaderbig, .gridheaderleft, .gridheaderright, .gridpager
+{	
+	padding: 4px 4px 4px 4px;
+	background:  #003399 url(images/vertgradient.png) repeat-x;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+}
+.gridheader a, .gridheaderbig a
+{
+	color: cornsilk;
+	text-decoration: none;
+}
+.gridheaderleft
+{
+	text-align: left;
+}
+.gridheaderright
+{
+	text-align: right;
+}
+.gridheaderbig
+{	
+	font-size: 135%;
+	background-image: url(images/vertgradient.png);
+	background-repeat: repeat-x;
+}
+.gridnormal
+{
+	background-color: #eeeeee;
+}
+.gridalternate
+{
+	background-color:#b5c7d6;
+}
+.gridhighlight
+{
+	background-image: url(images/LightOrangeGradient.png);
+	background-repeat: repeat-x;
+	background-color: White;	
+	cursor:pointer;
+}
+.gridpager, .gridpager table tr td
+{	
+	border: none 0px transparent;	
+	text-align: right;
+	padding: 3px;
+	color: cornsilk;	
+	font-weight: bold;		
+}
+.gridpager a, .gridpager a:visited
+{	
+	font-weight: normal;
+	text-decoration: none;
+	color: white;	
+}
+.containercontent
+{
+	padding: 20px;	
+}
+.grouping
+{
+    padding: 10px;
+	background-color: whitesmoke;   
+	position: relative; 	
+}
+.groupheader  
+{
+	background: SteelBlue; color: White; padding: 4px; margin-top: 10px; margin-bottom: 5px; font-weight: bold;
+}    
+
+.errormessage
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: maroon;
+}
+.errordisplay
+{	
+	font-weight: normal;
+	color: darkred;
+	background-color:cornsilk;
+	border: solid 2px darkred;	
+	padding: 6px 5px 8px 10px;
+	line-height: 1.5;
+	margin: 7px 0;
+}
+.errordisplay hr
+{
+	color: darkred;
+}
+.dialog
+{
+  background: White;
+  overflow: hidden;
+  border: solid 1px steelblue;  
+  -moz-border-radius: 6px 6px 4px 4px;
+  -webkit-border-radius: 5px;    
+}
+.dialog-header
+{	
+	background-image: url(images/dialogheader.png);    
+	background-repeat: repeat-x;
+	text-align: left;
+	color: cornsilk;
+	padding: 5px;	
+	padding-left: 10px;
+	font-size: 1.02em;
+	font-weight: bold;
+    -moz-border-radius: 5px 5px 0px 0px;   
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;   
+}
+.dialog-top
+{
+    -moz-border-radius: 5px 5px 0 0;   
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;  
+}
+.dialog-bottom
+{
+    -moz-border-radius: 0 0 3px 3px;	
+	-webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+.dialog-content
+{
+	padding: 15px;
+}
+.dialog-statusbar, .dialog-toolbar
+{
+	background: #eeeeee;
+	background-image: url(images/dialogstrip.png);
+	background-repeat: repeat-x;
+	padding: 5px;
+	padding-left: 10px;
+	border-top: solid 1px silver;
+	border-bottom: solid 1px silver;
+	font-size: 0.8em;
+}
+.dialog-statusbar
+{
+	-moz-border-radius: 0 0 3px 3px;	
+	-webkit-border-bottom-left-radius: 4px;
+       -webkit-border-bottom-right-radius: 4px;
+	padding-right: 10px;
+}
+.closebox
+{
+	position: absolute;    	
+	right: 2px;
+	top: 2px;
+	background-image: url(images/close.gif);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;    	
+	opacity: 0.60;
+    filter: alpha(opacity="70");
+} 
+.closebox:hover 
+{
+	xbackground-color: white;
+	opacity: 0.90;
+	filter: alpha(opacity="90");
+}
+
+.toolbarcontainer  
+{
+	background:#eeeeee;
+	background-image: url(images/dialogstrip.png);
+	background-repeat: repeat-x;
+	border: solid 1px silver;
+	vertical-align: top;
+	padding: 5px; 
+}
+.statusbar
+{
+	display:none;
+	position: fixed;
+	bottom: 5px;
+	left: 0px;
+	right: 0px;
+	height: 16px;	
+	padding: 5px;	
+	background: black;
+	color: white;	
+	border: solid 1px lightgray;	
+	opacity: .70;	
+	filter: alpha(opacity="70");
+	z-index: 200;
+	overflow: hidden;
+	overflow-y: auto; 
+}
+.statusbarhighlight
+{
+	font-weight: bold;
+	background-color: khaki;
+	color: Maroon;
+	border: solid 1px silver;
+}
+.statusbarclose
+{
+	position: absolute;
+	right: 10px; 
+	top: 2px;
+	color:red;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.hoverbutton  
+{
+	text-decoration:none;		
+	padding: 4px; 	
+	font-size: 8pt; 		
+	border: solid 1px transparent; 	
+}
+.hoverbutton:hover
+{	
+	background: white url('images/dialoghighlight.png'); 
+	border:  outset 1px silver; 	
+	cursor: hand;
+}     
+.hoverbutton a
+{
+	text-decoration: none;
+}
+.tabbutton, .selectedtabbutton
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0px;
+	font-size: 8pt;
+	background: url('images/tabnormal.gif') no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	cursor: hand;
+	color: darkblue;
+	width: 120px;
+	margin: 0px;
+	padding:0px;
+}
+.tabbutton:hover
+{
+	background: url('images/tabhover.gif') no-repeat;
+}
+.selectedtabbutton 
+{ 
+	font-weight: bold; 
+	color: white; 
+	background:url('images/tabselected.gif') no-repeat;
+	cursor:default;
+}
+.smallprogress,.smallprogressright
+{
+	width: 16px;
+	height: 16px;
+	background-image: url(images/loading_small.gif);
+	background-repeat: no-repeat;			
+	display: none;	
+}
+.smallprogressright { float: right }
+.notebox
+{
+	background: lightsteelblue;
+	padding: 10px;
+	border: solid 1px navy;
+	margin: 5px 40px 15px 30px;
+	font-size: 8pt;
+}
+.descriptionheader
+{
+	background: khaki;
+	color: black;
+	font-size: 8pt;
+	text-align: left;
+	padding: 10px;
+	
+}
+
+#divPhotoList
+{
+	margin: 0px auto 0px auto;
+	width: 95%;			
+	padding: 20px 10px 20px 50px;		
+}
+#ulThumbnailList
+{
+	padding: 0px;	
+	margin: 0px;	
+}	
+.photolistitem
+{
+	position: relative;
+	display: block;
+	float: left;	
+	list-style-type: none;
+    height: 220px;	
+    width: 170px;	
+	padding: 10px;
+	border: solid 1px #DBD3B6;
+	margin: 12px;
+	text-align: center;
+	-moz-border-radius: 5px 5px 3px 3px;
+    -webkit-border-radius: 4px;    
+}
+/* container around image inside of photolistitem*/
+.photolistitem div:first-child
+{		
+	height: 100px;
+	margin-bottom: 3px;	
+}
+/* div that contains the caption */
+.photolistitem div[id$=Notes]
+{
+	height: 50px;
+	overflow-y: auto;
+	overflow-x: hidden;	
+}
+#ImageDisplayPanel
+{
+    border: solid 6px White;
+    background:black;
+    color:white;
+    position:absolute;
+    z-index:100;
+    display:none;
+}
+#OpaqueOverlay
+{	
+	background-color: black;	
+}
+#imgProgress
+{
+	z-index: 2;
+	position: absolute;	
+	top: -200px;
+}
+#ImageDisplayContent
+{
+	background: #455262;
+}
+#ImageContainer
+{
+	border: solid 6px White;
+	background:black;
+	color:white;
+	min-width: 100px;
+	position:absolute;
+	z-index:100;
+    -moz-border-radius: 6px 6px 4px 4px;
+    -webkit-border-radius: 5px;    
+}
+#OverlayImageHeader
+{	
+	background: white;
+	vertical-align: top;
+	padding:0px;
+	height: 20px;	
+}
+#divShowImage
+{
+	float: left;
+	width: 23px;
+	height: 16px;
+	background-image: url(../photoalbum/maximize.png);
+}
+#divShowImage:hover
+{
+	background-image: url(../photoalbum/maximize_hover.png);
+}
+
+#closebuttontext
+{
+	font-family:Arial Black;
+	font-size: 12pt;
+	font-weight: bold;
+	text-decoration:none;
+	color:Maroon;
+	border: solid 1px transparent;
+	padding: 0px 5px 0px 5px;
+}
+#closebuttontext:hover
+{
+	color: Red;
+	background: url(images/menuhighlight.png);
+	border: solid 1px silver;
+}
+.thumbnailimage 
+{ 
+	border: solid 2px whitesmoke; 
+}    	
+.thumbnaillink
+{
+	display: block;
+	margin-bottom: 10px;	
+}
+.deletethumbnail
+{				
+	/* PhotoListItem  is relative so relative to it */
+	position: absolute;
+	top: 1px;
+	right: 3px;		
+	background: black;
+	color: Red;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px;
+	opacity: 0.60;
+	filter: alpha(opacity="60");
+	display: none;
+	margin-top: 3px;
+	width:25px;			
+	cursor: pointer;	
+}
+.deletethumbnail:hover
+{
+	opacity: 0.90;
+	filter: alpha(opacity="90");	
+}
+.captionedit
+{
+	 overflow-x: hidden;
+	 overflow-y: scroll;	 
+	 background-color: lightblue;
+	 border: solid 1px white;
+	 font-size: 8pt;
+}
+/* REQUIRED Style - or IE fails to click on empty captions  */
+.captiondisplay
+{
+	background-color: gray;
+	xborder: solid 1px silver;
+}
+#AdminDialog
+{
+	background: white;
+	color: Black;
+	border: solid 2px navy;
+}
+#AdminDialogContent
+{
+	padding: 20px;
+}
+#AdminDialogContent table tr td:first-child
+{
+	width: 120px;
+	text-align: right;	
+}
+.admininputlong
+{
+	width: 400px;
+}
+.adminfield
+{
+	
+}
+.dialog
+{
+	border: solid 2px navy;	
+}
+.dialogheader
+{
+	background: navy;
+	color: white;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 5px;	
+}
+#divSlideShow
+{
+	border: solid 15px white;
+	background: black;	
+    -moz-border-radius: 6px 6px 4px 4px;
+    -webkit-border-radius: 5px;    
+
+}
+#divSidebarToolbox
+{
+	padding: 8px;
+	text-align: center;
+	font-family: Arial Black;
+	font-weight: bold;
+}
+#divSidebarToolbox a
+{
+	text-decoration: none;
+	width: 100px;
+}
+#divSidebarToolbox img:hover
+{
+	background: green;
+}
+#divCloseButton
+{
+	float: left;
+	width: 38px;
+	height: 16px;
+	background-image: url(../photoalbum/close.png);
+}
+#divCloseButton:hover
+{
+	background-image: url(../photoalbum/close_hover.png);
+}
+#titleContainer
+{    	
+	background-color: #535353;	
+	background-repeat: repeat-x;
+	padding: 10px;
+	display: block;
+}
+#lblTitle
+{ 
+	font-size:xx-large; 
+	color: white; 
+	font-family: arial black; 	
+	display: block;
+	min-height: 25px;
+}
+#lblDescription
+{
+	margin: 10px;
+	display: block;
+	min-height: 10px;
+}
+#ErrorDisplay
+{ 
+	margin: 10px; 
+}
+#divMenuContainer
+{
+	background: #535353;
+	background-repeat: repeat-x;
+	height: 15px;
+	padding: 8px;	
+	margin-bottom: 10px;
+	color: White;
+}
+#divMenuLinks
+{
+	float: right;
+	
+}
+#divMenuLinks a
+{
+	padding: 4px;	
+	text-decoration: none;
+	color: White;
+}
+#divMenuLinks a:hover
+{	
+	background: url(images/menuhighlight.png);
+	color: black;
+}
+#divAdminLinks
+{		
+}
