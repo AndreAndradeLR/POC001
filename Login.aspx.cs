@@ -82,7 +82,7 @@ public partial class frmLogin : System.Web.UI.Page
     {
         //Login1.HelpPageText = "Help with logging in...";
         //Login1.PasswordRecoveryText = "Forgot your password?";
-        Login1.FailureText = "usuário ou senha incorreto";
+        Login1.FailureText = "Usuário ou senha incorreto";
     }
 
     //protected void btnVisitante_Click1(object sender, EventArgs e)
