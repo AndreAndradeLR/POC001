@@ -75,7 +75,7 @@ a:hover
                                   </div>
                                    <span class="button">
                                    <asp:Button ID="LoginButton" runat="server" 
-                                   CommandName="Login" Text="Entrar Na versão atualizada!!! 23-06-2016 17h" ValidationGroup="Login1" />
+                                   CommandName="Login" Text="Entrar Na versão atualizada!!! 28-06-2016 UBUNTU" ValidationGroup="Login1" />
                                    </span>
                                             
                                         <asp:CheckBox ID="RememberMe" Visible="false" runat="server" Text="Remember me next time." />

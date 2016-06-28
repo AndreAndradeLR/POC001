@@ -54,6 +54,7 @@
     <Reference Include="RJS.Web.WebControl.PopCalendar">
       <HintPath>..\Dependências\RJS.Web.WebControl.PopCalendar.dll</HintPath>
     </Reference>
+	<Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
